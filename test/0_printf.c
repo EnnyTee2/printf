@@ -3,18 +3,18 @@
 #include <stdarg.h>
 #include <string.h>
 
-int print (char * str, ...)
+int _printf(const char *format, ...)
 {
         va_list vl;
 	int i = 0, j=0;
 	char buff[100]={0}, tmp[20];
-	va_start( vl, str ); 
-	while (str && str[i])
+	va_start( vl, format ); 
+	while (format && format[i])
         {
-                if(str[i] == '%')
+                if(format[i] == '%')
 		{
                         i++;
- 		        switch (str[i]) 
+ 		        switch (format[i]) 
  		        {
                                 case 'c': 
 	 		        {
@@ -48,7 +48,7 @@ int print (char * str, ...)
                 
      	        else 
 	        {
-	       	        buff[j] =str[i];
+	       	        buff[j] =format[i];
 	       	        j++;
 	        }
 	        i++;
