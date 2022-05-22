@@ -31,7 +31,7 @@ int _printf(const char *format, ...)
 		                }
                                 case 's':
                                 {
-                                        strings = (char *)va_arg( vl, int );
+                                        char strings[] = (char *)va_arg( vl, int );
                                         strcpy(&buff[j], strings);
 	 		                j += strlen(strings);
 		                        break;
