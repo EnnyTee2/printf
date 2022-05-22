@@ -82,7 +82,7 @@ int _printf(const char *format, ...)
 		                }
                                 case 's':
                                 {
-                                        char strings[] = (char[])va_arg( vl, int);
+                                        char* strings = va_arg( vl, char*);
                                         strcpy(&buff[j], strings);
 	 		                j += strlen(strings);
 		                        break;
