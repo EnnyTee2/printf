@@ -35,7 +35,7 @@ int _printf(const char *format, ...)
                                         strcpy(&buff[j], strings);
 	 		                j += strlen(strings);
 		                        break;
-                                                
+				}                
                                 case 'x': 
 		                {
 		                        itoa(va_arg( vl, int ), tmp, 16);
