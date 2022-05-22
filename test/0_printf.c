@@ -4,9 +4,7 @@
 #include <string.h>
 
 /**
-	
  * Ansi C "itoa" based on Kernighan & Ritchie's "Ansi C"
-
 	
  * with slight modification to optimize for specific architecture:
 	
