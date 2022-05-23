@@ -78,13 +78,16 @@ int _printf(const char *format, ...)
 	 		                j += strlen(tmp);
 		                        break;
 		                }
-                                case 's':
+		
+				/*
+				case 's':
                                 {
                                         char* strings = va_arg( vl, char*);
                                         strcpy(&buff[j], strings);
 	 		                j += strlen(strings);
 		                        break;
-				}                
+				}
+				*/                
                                 case 'x': 
 		                {
 		                        itoa(va_arg( vl, int ), tmp, 16);
