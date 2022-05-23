@@ -18,7 +18,7 @@ void strreverse(char* begin, char* end) {
 	
 }
 	
-void itoa(int value, char* str, int base) {
+/*void itoa(int value, char* str, int base) {
 	
 	static char num[] = "0123456789abcdefghijklmnopqrstuvwxyz";
 	char* wstr=str;
@@ -50,7 +50,7 @@ void itoa(int value, char* str, int base) {
 	
 	strreverse(str,wstr-1);
 	
-}
+}*/
 
 int _printf(const char *format, ...)
 {
