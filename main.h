@@ -21,7 +21,7 @@ int print_char(va_list arr_list);
 int (*get_funct(char s))(va_list arr_list);
 int print_str(va_list arr_list);
 int print_dec(va_list arr_list);
-int print_int(va_list arr_numlist);
+int print_int(va_list arr_list);
 int print_bin(va_list bin_list);
 int print_uns(va_list arr_list);
 int print_oct(va_list arr_list);
