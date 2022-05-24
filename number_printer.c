@@ -7,7 +7,7 @@
 */
 int print_dec(va_list arr_list)
 {
-	unsigned int abs_num, aux_num, zero_count, counter;
+	unsigned int abs_num, temp_num, zero_count, counter;
 	int number;
 
 	counter = 0;
@@ -22,11 +22,11 @@ int print_dec(va_list arr_list)
 	else
 		abs_num = number;
 
-	aux_num = abs_num
+	temp_num = abs_num
 	zero_count = 1;
-	while (aux_num > 9)
+	while (temp_num > 9)
 	{
-		aux_num /= 10;
+		temp_num /= 10;
 		zero_count *= 10;
 	}
 
