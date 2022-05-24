@@ -55,7 +55,7 @@ void strreverse(char* begin, char* end) {
 int _printf(const char *format, ...)
 {
         va_list vl;
-	int i = 0, j=0;
+	int i = 0, j = 0;
 	char buff[100]={0}, tmp[20];
 	va_start( vl, format ); 
 	while (format && format[i])
@@ -100,7 +100,7 @@ int _printf(const char *format, ...)
                 
      	        else 
 	        {
-	       	        buff[j] =format[i];
+	       	        buff[j] = format[i];
 	       	        j++;
 	        }
 	        i++;
