@@ -18,7 +18,7 @@ typedef struct defin
 int _printf(const char *format, ...);
 int _putchar(char c);
 int print_char(va_list arr_list);
-int (*get_func(char s))(va_list arr_list);
+int (*get_funct(char s))(va_list arr_list);
 int print_str(va_list arr_list);
 int print_dec(va_list arr_list);
 int print_int(va_list arr_numlist);
