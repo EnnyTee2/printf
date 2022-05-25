@@ -26,4 +26,4 @@ int print_bin(va_list bin_list);
 int print_uns(va_list arr_list);
 int print_oct(va_list arr_list);
 int print_hex(va_list arr_list);
-
+int print_X(va_list arr_list);
