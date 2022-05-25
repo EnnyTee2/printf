@@ -20,9 +20,11 @@ int print_dec(va_list arr_list)
 		counter += _putchar(45);
 	}
 	else
+	{
 		abs_num = number;
+	}
 
-	temp_num = abs_num
+	temp_num = abs_num;
 	zero_count = 1;
 	while (temp_num > 9)
 	{
