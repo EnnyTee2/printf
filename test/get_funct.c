@@ -19,7 +19,7 @@ int (*get_funct(char s))(va_list)
 
 	int j;
 
-	for (j = 0; actv[j].tr != NULL; i++)
+	for (j = 0; actv[j].tr != NULL; j++)
 	{
 		if (*actv[j].tr == s)
 			return (actv[j].func);
