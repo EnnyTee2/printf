@@ -1,13 +1,13 @@
 #include "main.h"
 
 /**
- * handl_buf - concatenates the buffer characters
+ * buff_handler - concatenates the buffer characters
  * @buf: buffer pointer
  * @c: charcter to concatenate
  * @ibuf: index of buffer pointer
  * Return: index of buffer pointer.
  */
-unsigned int handl_buf(char *buf, char c, unsigned int ibuf)
+unsigned int buff_handler(char *buf, char c, unsigned int ibuf)
 {
 	if (ibuf == 1024)
 	{
