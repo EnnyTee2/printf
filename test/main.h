@@ -33,6 +33,7 @@ int print_hex(va_list arr_list);
 int print_X(va_list arr_list);
 
 int print_add(va_list arguments, char *buf, unsigned int ibuf)
-unsigned int handl_buf(char *buf, char c, unsigned int ibuf)
+unsigned int buff_handler(char *buf, char c, unsigned int ibuf)
+char *fill_binary_arr(char *binary, long int int_in, int isneg, int limit)
 
 #endif
