@@ -13,6 +13,7 @@ int (*get_funct(char s))(va_list)
 		{"d", print_dec},
 		{"i", print_int},
 		{"b", print_bin},
+		{"r", NULL},
 		{NULL, NULL}
 	};
 
