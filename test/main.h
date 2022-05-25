@@ -1,3 +1,6 @@
+#ifndef _MAIN_
+#define _MAIN_
+
 #include <unistd.h>
 #include <stdarg.h>
 #include <stdio.h>
@@ -27,3 +30,5 @@ int print_uns(va_list arr_list);
 int print_oct(va_list arr_list);
 int print_hex(va_list arr_list);
 int print_X(va_list arr_list);
+
+#endif
