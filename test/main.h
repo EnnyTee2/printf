@@ -33,5 +33,6 @@ int print_hex(va_list arr_list);
 int print_X(va_list arr_list);
 
 int print_add(va_list arguments, char *buf, unsigned int ibuf)
+unsigned int handl_buf(char *buf, char c, unsigned int ibuf)
 
 #endif
