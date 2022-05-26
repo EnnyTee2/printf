@@ -8,12 +8,12 @@
 int (*print_func_getter(const char *c, int index))(va_list, char *, unsigned int)
 {
 	print_t pr[] = {
-		{"c", print_chr}, {"s", print_str},
+		{"c", print_char}, {"s", print_strn},
 		{"i", print_int}, {"d", print_int},
-		{"b", print_bnr}, {"u", print_unt},
+		{"b", print_bin}, {"u", print_ut},
 		{"o", print_oct}, {"x", print_hex},
 		{"X", print_upx}, {"S", print_usr},
-		{"p", print_add}, {"li", prinlint},
+		{"p", print_address}, {"li", prinlint},
 		{"ld", prinlint}, {"lu", prinlunt},
 		{"lo", prinloct}, {"lx", prinlhex},
 		{"lX", prinlupx}, {"hi", prinhint},
@@ -29,11 +29,11 @@ int (*print_func_getter(const char *c, int index))(va_list, char *, unsigned int
 		{" d", prinsint}, {" u", print_unt},
 		{" o", print_oct}, {" x", print_hex},
 		{" X", print_upx}, {"R", print_rot},
-		{"r", print_rev}, {"%", print_prg},
-		{"l", print_prg}, {"h", print_prg},
+		{"r", print_rev}, {"%", printt_prg},
+		{"l", printt_prg}, {"h", printt_prg},
 		{" +i", prinpint}, {" +d", prinpint},
 		{"+ i", prinpint}, {"+ d", prinpint},
-		{" %", print_prg}, {NULL, NULL},
+		{" %", printt_prg}, {NULL, NULL},
 	};
 	int i = 0, j = 0, first_index;
 
