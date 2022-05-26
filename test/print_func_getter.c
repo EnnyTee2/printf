@@ -26,13 +26,13 @@ int (*print_func_getter(const char *c, int index))(va_list, char *, unsigned int
 		{"+d", printpints}, {"+u", print_unsnt},
 		{"+o", print_octa}, {"+x", print_hex},
 		{"+X", print_uphx}, {" i", prinspint},
-		{" d", prinsint}, {" u", print_unsnt},
+		{" d", prinspint}, {" u", print_unsnt},
 		{" o", print_oct}, {" x", print_hex},
 		{" X", print_uphx}, {"R", print_srot},
 		{"r", print_revr}, {"%", printt_prg},
 		{"l", printt_prg}, {"h", printt_prg},
-		{" +i", prinspint}, {" +d", prinspint},
-		{"+ i", prinspint}, {"+ d", prinspint},
+		{" +i", printpints}, {" +d", printpints},
+		{"+ i", printpints}, {"+ d", printpints},
 		{" %", printt_prg}, {NULL, NULL},
 	};
 	int i = 0, j = 0, first_index;
