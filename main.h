@@ -25,7 +25,7 @@ int print_chr(va_list arguments, char *buf, unsigned int ibuf);
 int print_str(va_list arguments, char *buf, unsigned int ibuf);
 int print_int(va_list arguments, char *buf, unsigned int ibuf);
 int print_bnr(va_list arguments, char *buf, unsigned int ibuf);
-int print_unt(va_list arguments, char *buf, unsigned int ibuf);
+int print_unsnt(va_list arguments, char *buf, unsigned int ibuf);
 int print_octa(va_list arguments, char *buf, unsigned int ibuf);
 int print_hex(va_list arguments, char *buf, unsigned int ibuf);
 int print_upx(va_list arguments, char *buf, unsigned int ibuf);
