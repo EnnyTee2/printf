@@ -23,7 +23,7 @@ int _printf(const char *format, ...);
 int printt_prg(va_list __attribute__((unused)), char *, unsigned int);
 int print_char(va_list arguments, char *buffer, unsigned int ibuffer)
 int print_str(va_list arguments, char *buf, unsigned int ibuf);
-int print_int(va_list arguments, char *buf, unsigned int ibuf);
+int print_int(va_list arguments, char *buffer, unsigned int ibuffer);
 int print_bnr(va_list arguments, char *buf, unsigned int ibuf);
 int print_unsnt(va_list arguments, char *buf, unsigned int ibuf);
 int print_octa(va_list arguments, char *buf, unsigned int ibuf);
@@ -54,7 +54,7 @@ unsigned int handl_buf(char *buffer, char s, unsigned int ibuffer);
 int print_buf(char *buf, unsigned int nbuf);
 char *fill_bin_arr(char *bin, long int int_in, int isneg, int limit);
 char *fill_oct_arr(char *bin, char *oct);
-char *fill_long_oct_arr(char *bin, char *oct)
+char *fill_long_oct_arr(char *bin, char *oct);
 char *fill_short_oct_arr(char *bin, char *oct);
 char *fill_hex_arr(char *bin, char *hex, int isupper, int size);
 
