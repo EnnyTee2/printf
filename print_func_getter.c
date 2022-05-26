@@ -1,8 +1,8 @@
 #include "main.h"
 /**
- * get_print_func - selects the correct function to perform the operation.
- * @s: argument indentifier
- * @index: index for argument indentifier
+ * print_func_getter - selects the correct function to perform the operation.
+ * @c: argument id
+ * @index: index for argument id
  * Return: pointer to a function.
  */
 int (*print_func_getter(const char *c, int index))(va_list, char *, unsigned int)
