@@ -1,0 +1,20 @@
+#include "main.h"
+
+/**
+ * buffer_handler - joins the buffer characters
+ * @buffer: buffer pointer
+ * @s: character to concatenate
+ * @ibuffer: index of the buffer pointer
+ * Return: index of the buffer pointer.
+ */
+unsigned int handl_buf(char *buffer, char s, unsigned int ibuffer)
+{
+	if (ibuffer == 1024)
+	{
+		print_buf(buffer, ibuffer);
+		ibuffer = 0;
+	}
+	buffer[ibuffer] = s;
+	ibuffer++;
+	return (ibuffer);
+}
