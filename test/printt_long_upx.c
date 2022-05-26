@@ -35,7 +35,7 @@ int printlupx(va_list arguments, char *buf, unsigned int ibuf)
 			first_digit = 1;
 		if (first_digit)
 		{
-			ibuf = handl_buf(buf, hexadecimal[i], ibuf);
+			ibuf = buffer_handler(buf, hexadecimal[i], ibuf);
 			count++;
 		}
 	}
