@@ -23,7 +23,7 @@ int _printf(const char *format, ...);
 int printt_prg(va_list __attribute__((unused)), char *, unsigned int);
 int print_char(va_list arguments, char *buffer, unsigned int ibuffer)
 int print_strn(va_list arguments, char *buf, unsigned int ibuf);
-int print_int(va_list arguments, char *buf, unsigned int ibuf);
+int print_int(va_list arguments, char *buffer, unsigned int ibuffer);
 int print_bnr(va_list arguments, char *buf, unsigned int ibuf);
 int print_unsnt(va_list arguments, char *buf, unsigned int ibuf);
 int print_octa(va_list arguments, char *buf, unsigned int ibuf);
