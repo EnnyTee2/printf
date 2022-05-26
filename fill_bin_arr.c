@@ -2,20 +2,20 @@
 
 /**
  * fill_binary_array - prints decimal in binary
- * @binary: pointer to binary
+ * @bin: pointer to binary
  * @int_in: input number
  * @isneg: if input number is negative
- * @limit: size of the binary
+ * @size: size of the binary
  * Return: number of chars printed.
  */
-char *fill_binary_array(char *bin, long int int_in, int isneg, int limit)
+char *fill_binary_array(char *bin, long int int_in, int isneg, int size)
 {
 	int j;
 
-	for (j = 0; j < limit; j++)
+	for (j = 0; j < size; j++)
 		bin[j] = '0';
-	bin[limit] = '\0';
-	for (j = limit - 1; int_in > 1; j--)
+	bin[size] = '\0';
+	for (j = size - 1; int_in > 1; j--)
 	{
 		if (int_in == 2)
 			bin[j] = '0';
