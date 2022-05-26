@@ -11,7 +11,7 @@ unsigned int handl_buf(char *buffer, char s, unsigned int ibuffer)
 {
 	if (ibuffer == 1024)
 	{
-		print_buf(buffer, ibuffer);
+		buffer_printer(buffer, ibuffer);
 		ibuffer = 0;
 	}
 	buffer[ibuffer] = s;
