@@ -38,7 +38,7 @@ int prinluntt(va_list arguments, char *buf, unsigned int ibuf);
 int prinlocta(va_list arguments, char *buf, unsigned int ibuf);
 int prinlhex(va_list arguments, char *buf, unsigned int ibuf);
 int printlupx(va_list arguments, char *buf, unsigned int ibuf);
-int prinhint(va_list arguments, char *buf, unsigned int ibuf);
+int prinshint(va_list arguments, char *buf, unsigned int ibuf);
 int prinhunt(va_list arguments, char *buf, unsigned int ibuf);
 int prinhocta(va_list arguments, char *buf, unsigned int ibuf);
 int prinhhexa(va_list arguments, char *buf, unsigned int ibuf);
