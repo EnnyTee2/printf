@@ -27,10 +27,10 @@ int print_int(va_list arguments, char *buffer, unsigned int ibuffer);
 int print_bnr(va_list arguments, char *buf, unsigned int ibuf);
 int print_unsnt(va_list arguments, char *buf, unsigned int ibuf);
 int print_octa(va_list arguments, char *buf, unsigned int ibuf);
-int print_hex(va_list arguments, char *buf, unsigned int ibuf);
+int print_hex(va_list arguments, char *buffer, unsigned int ibuffer);
 int print_uphx(va_list arguments, char *buf, unsigned int ibuf);
 int print_ustr(va_list arguments, char *buf, unsigned int ibuf);
-int print_add(va_list arguments, char *buf, unsigned int ibuf);
+int print_address(va_list arguments, char *buffer, unsigned int ibuffer)
 int print_revr(va_list arguments, char *buf, unsigned int ibuf);
 int print_srot(va_list arguments, char *buf, unsigned int ibuf);
 int prinlnint(va_list arguments, char *buf, unsigned int ibuf);
