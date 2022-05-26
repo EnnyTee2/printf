@@ -9,7 +9,7 @@
  * Return: On success 1.
  */
 
-int print_chr(va_list arguments, char *buffer, unsigned int ibuffer)
+int print_char(va_list arguments, char *buffer, unsigned int ibuffer)
 {
 	char s;
 
