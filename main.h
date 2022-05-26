@@ -54,8 +54,8 @@ unsigned int handl_buf(char *buf, char c, unsigned int ibuf);
 int print_buf(char *buf, unsigned int nbuf);
 char *fill_bin_arr(char *bin, long int int_in, int isneg, int limit);
 char *fill_oct_arr(char *bin, char *oct);
-char *fill_long_oct_array(char *bnr, char *oct);
-char *fill_short_oct_array(char *bnr, char *oct);
+char *fill_long_oct_arr(char *bin, char *oct)
+char *fill_short_oct_arr(char *bin, char *oct);
 char *fill_hex_arr(char *bin, char *hex, int isupper, int size);
 
 #endif
