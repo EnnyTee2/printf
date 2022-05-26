@@ -19,7 +19,7 @@ int print_funct_id(const char *s, int index)
 		{"hx", prinhhexa}, {"hX", printshupx}, {"#o", prinnocta},
 		{"#x", prinnhexa}, {"#X", prinnuphx}, {"#i", print_int},
 		{"#d", print_int}, {"#u", print_unsnt}, {"+i", prinspint},
-		{"+d", prinpints}, {"+u", print_unsnt}, {"+o", print_octa},
+		{"+d", printpints}, {"+u", print_unsnt}, {"+o", print_octa},
 		{"+x", print_hex}, {"+X", print_uphx}, {" i", prinspint},
 		{" d", prinspint}, {" u", print_unsnt}, {" o", print_octa},
 		{" x", print_hex}, {" X", print_uphx}, {"R", print_srot},
