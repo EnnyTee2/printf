@@ -7,7 +7,7 @@
  * @ibuffer: index of the buffer pointer
  * Return: index of the buffer pointer.
  */
-unsigned int handl_buf(char *buffer, char s, unsigned int ibuffer)
+unsigned int buffer_handler(char *buffer, char s, unsigned int ibuffer)
 {
 	if (ibuffer == 1024)
 	{
