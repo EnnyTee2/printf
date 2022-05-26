@@ -1,13 +1,13 @@
 #include "main.h"
 
 /**
- * prinnhex - print number in hex begining with zero
+ * prinnhexa - print number in hex begining with zero
  * @arguments: input string
  * @buf: buffer pointer
  * @ibuf: index for buffer pointer
  * Return: number of chars printed
  */
-int prinnhex(va_list arguments, char *buf, unsigned int ibuf)
+int prinnhexa(va_list arguments, char *buf, unsigned int ibuf)
 {
 	int int_input, i, isnegative, count, first_digit;
 	char *hexadecimal, *binary;
