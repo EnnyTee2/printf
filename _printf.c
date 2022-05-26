@@ -23,29 +23,29 @@ int _printf(const char *format, ...)
 		if (format[j] == '%')
 		{
 			if (format[j + 1] == '\0')
-			{	print_buf(buff, ibuf), free(buff), va_end(arguments);
+			{	buffer_printer(buff, ibuf), free(buff), va_end(arguments);
 				return (-1);
 			}
 			else
-			{	function = get_print_func(format, j + 1);
+			{	function = print_func_getter(format, j + 1);
 				if (function == NULL)
 				{
 					if (format[j + 1] == ' ' && !format[j + 2])
 						return (-1);
-					handl_buf(buff, format[j], ibuf), len++, j--;
+					buffer_handler(buff, format[j], ibuf), len++, j--;
 				}
 				else
 				{
 					len += function(arguments, buff, ibuf);
-					j += ev_print_func(format, j + 1);
+					j += print_funct_id(format, j + 1);
 				}
 			} j++;
 		}
 		else
-			handl_buf(buff, format[j], ibuf), len++;
+			buffer_handler(buff, format[j], ibuf), len++;
 		for (ibuf = len; ibuf > 1024; ibuf -= 1024)
 			;
 	}
-	print_buf(buff, ibuf), free(buff), va_end(arguments);
+	buffer_printer(buff, ibuf), free(buff), va_end(arguments);
 	return (len);
 }
