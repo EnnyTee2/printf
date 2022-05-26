@@ -10,7 +10,7 @@ int (*print_func_getter(const char *c, int index))(va_list, char *, unsigned int
 	print_t pr[] = {
 		{"c", print_char}, {"s", print_strn},
 		{"i", print_int}, {"d", print_int},
-		{"b", print_bin}, {"u", print_ut},
+		{"b", print_bin}, {"u", print_unsnt},
 		{"o", print_octa}, {"x", print_hex},
 		{"X", print_uphx}, {"S", print_usr},
 		{"p", print_address}, {"li", prinlint},
@@ -26,7 +26,7 @@ int (*print_func_getter(const char *c, int index))(va_list, char *, unsigned int
 		{"+d", printpints}, {"+u", print_unt},
 		{"+o", print_oct}, {"+x", print_hex},
 		{"+X", print_upx}, {" i", prinsint},
-		{" d", prinsint}, {" u", print_unt},
+		{" d", prinsint}, {" u", print_unsnt},
 		{" o", print_oct}, {" x", print_hex},
 		{" X", print_upx}, {"R", print_srot},
 		{"r", print_revr}, {"%", printt_prg},
