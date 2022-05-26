@@ -1,6 +1,5 @@
 #ifndef _MAIN_H_
 #define _MAIN_H_
-#define printf _printf
 
 #include <stdarg.h>
 #include <unistd.h>
@@ -22,7 +21,7 @@ typedef struct print
 
 int _printf(const char *format, ...);
 int printt_prg(va_list __attribute__((unused)), char *, unsigned int);
-int print_char(va_list arguments, char *buffer, unsigned int ibuffer)
+int print_char(va_list arguments, char *buffer, unsigned int ibuffer);
 int print_strn(va_list arguments, char *buf, unsigned int ibuf);
 int print_int(va_list arguments, char *buffer, unsigned int ibuffer);
 int print_bin(va_list arguments, char *buffer, unsigned int ibuffer);
@@ -31,7 +30,7 @@ int print_octa(va_list arguments, char *buf, unsigned int ibuf);
 int print_hex(va_list arguments, char *buffer, unsigned int ibuffer);
 int print_uphx(va_list arguments, char *buf, unsigned int ibuf);
 int print_ustr(va_list arguments, char *buf, unsigned int ibuf);
-int print_address(va_list arguments, char *buffer, unsigned int ibuffer)
+int print_address(va_list arguments, char *buffer, unsigned int ibuffer);
 int print_revr(va_list arguments, char *buf, unsigned int ibuf);
 int print_srot(va_list arguments, char *buf, unsigned int ibuf);
 int prinlnint(va_list arguments, char *buf, unsigned int ibuf);
@@ -55,7 +54,7 @@ unsigned int buffer_handler(char *buffer, char s, unsigned int ibuffer);
 int buffer_printer(char *buffer, unsigned int nbuffer);
 char *fill_bin_arr(char *bin, long int int_in, int isneg, int size);
 char *fill_oct_arr(char *bin, char *oct);
-char *fill_long_oct_arr(char *bin, char *oct)
+char *fill_long_oct_arr(char *bin, char *oct);
 char *fill_short_oct_arr(char *bin, char *oct);
 char *fill_hex_arr(char *bin, char *hex, int isupper, int size);
 
