@@ -8,7 +8,7 @@
  * @size: size of the binary
  * Return: number of chars printed.
  */
-char *fill_binary_array(char *bin, long int int_in, int isneg, int size)
+char *fill_bin_array(char *bin, long int int_in, int isneg, int size)
 {
 	int j;
 
