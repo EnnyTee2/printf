@@ -32,7 +32,7 @@ int print_upx(va_list arguments, char *buf, unsigned int ibuf);
 int print_usr(va_list arguments, char *buf, unsigned int ibuf);
 int print_add(va_list arguments, char *buf, unsigned int ibuf);
 int print_revr(va_list arguments, char *buf, unsigned int ibuf);
-int print_rot(va_list arguments, char *buf, unsigned int ibuf);
+int print_srot(va_list arguments, char *buf, unsigned int ibuf);
 int prinlnint(va_list arguments, char *buf, unsigned int ibuf);
 int prinluntt(va_list arguments, char *buf, unsigned int ibuf);
 int prinlocta(va_list arguments, char *buf, unsigned int ibuf);
