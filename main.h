@@ -51,7 +51,7 @@ int prinspint(va_list arguments, char *buf, unsigned int ibuf);
 int (*print_func_getter(const char *c, int index))(va_list, char *, unsigned int);
 int print_funct_id(const char *s, int index);
 unsigned int buffer_handler(char *buffer, char s, unsigned int ibuffer);
-iint buffer_printer(char *buffer, unsigned int nbuffer);
+int buffer_printer(char *buffer, unsigned int nbuffer);
 char *fill_bin_arr(char *bin, long int int_in, int isneg, int size);
 char *fill_oct_arr(char *bin, char *oct);
 char *fill_long_oct_arr(char *bin, char *oct)
