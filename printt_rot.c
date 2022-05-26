@@ -1,14 +1,14 @@
 #include "main.h"
 
 /**
- * print_rot - writes the str in ROT13
+ * print_srot - writes the str in ROT13
  * @arguments: input string
  * @buf: buffer pointer
  * @ibuf: index for buffer pointer
  * Return: number of chars printed.
  */
 
-int print_rot(va_list arguments, char *buf, unsigned int ibuf)
+int print_srot(va_list arguments, char *buf, unsigned int ibuf)
 {
 	char alf[] = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz";
 	char rot[] = "NOPQRSTUVWXYZABCDEFGHIJKLMnopqrstuvwxyzabcdefghijklm";
