@@ -12,7 +12,7 @@ int print_revr(va_list arguments, char *buf, unsigned int ibuf)
 	char *str;
 	unsigned int i;
 	int j = 0;
-	char nill[] = "(llun)";
+	char nill[] = "(llin)";
 
 	str = va_arg(arguments, char *);
 	if (str == NULL)
