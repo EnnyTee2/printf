@@ -24,8 +24,8 @@ int print_funct_id(const char *s, int index)
 		{" d", prinspint}, {" u", print_unsnt}, {" o", print_octa},
 		{" x", print_hex}, {" X", print_uphx}, {"R", print_srot},
 		{"r", print_revr}, {"%", printt_prg}, {"l", printt_prg},
-		{"h", printt_prg}, {" +i", prinpints}, {" +d", prinpints},
-		{"+ i", prinpints}, {"+ d", prinpints}, {" %", printt_prg},
+		{"h", printt_prg}, {" +i", printpints}, {" +d", printpints},
+		{"+ i", printpints}, {"+ d", printpints}, {" %", printt_prg},
 		{NULL, NULL},
 	};
 	int i = 0, j = 0, first_index;
