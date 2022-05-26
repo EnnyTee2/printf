@@ -16,7 +16,7 @@ int printlupx(va_list arguments, char *buf, unsigned int ibuf)
 	isnegative = 0;
 	if (int_input == 0)
 	{
-		ibuf = handl_buf(buf, '0', ibuf);
+		ibuf = buffer_handler(buf, '0', ibuf);
 		return (1);
 	}
 	if (int_input < 0)
@@ -26,9 +26,9 @@ int printlupx(va_list arguments, char *buf, unsigned int ibuf)
 	}
 
 	binary = malloc(sizeof(char) * (64 + 1));
-	binary = fill_binary_array(binary, int_input, isnegative, 64);
+	binary = fill_bin_arr(binary, int_input, isnegative, 64);
 	hexadecimal = malloc(sizeof(char) * (16 + 1));
-	hexadecimal = fill_hex_array(binary, hexadecimal, 1, 16);
+	hexadecimal = fill_hex_arr(binary, hexadecimal, 1, 16);
 	for (first_digit = i = count = 0; hexadecimal[i]; i++)
 	{
 		if (hexadecimal[i] != '0' && first_digit == 0)
