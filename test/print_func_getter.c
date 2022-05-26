@@ -27,7 +27,7 @@ int (*print_func_getter(const char *c, int index))(va_list, char *, unsigned int
 		{"+o", print_octa}, {"+x", print_hex},
 		{"+X", print_uphx}, {" i", prinspint},
 		{" d", prinspint}, {" u", print_unsnt},
-		{" o", print_oct}, {" x", print_hex},
+		{" o", print_octa}, {" x", print_hex},
 		{" X", print_uphx}, {"R", print_srot},
 		{"r", print_revr}, {"%", printt_prg},
 		{"l", printt_prg}, {"h", printt_prg},
