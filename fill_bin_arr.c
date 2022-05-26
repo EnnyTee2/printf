@@ -1,14 +1,14 @@
 #include "main.h"
 
 /**
- * fill_binary_array - prints decimal in binary
+ * fill_bin_arr - prints decimal in binary
  * @bin: pointer to binary
  * @int_in: input number
  * @isneg: if input number is negative
  * @size: size of the binary
  * Return: number of chars printed.
  */
-char *fill_bin_array(char *bin, long int int_in, int isneg, int size)
+char *fill_bin_arr(char *bin, long int int_in, int isneg, int size)
 {
 	int j;
 
