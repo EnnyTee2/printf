@@ -21,7 +21,7 @@ typedef struct print
 
 int _printf(const char *format, ...);
 int printt_prg(va_list __attribute__((unused)), char *, unsigned int);
-int print_chr(va_list arguments, char *buf, unsigned int ibuf);
+int print_char(va_list arguments, char *buffer, unsigned int ibuffer)
 int print_str(va_list arguments, char *buf, unsigned int ibuf);
 int print_int(va_list arguments, char *buf, unsigned int ibuf);
 int print_bnr(va_list arguments, char *buf, unsigned int ibuf);
