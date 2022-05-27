@@ -48,7 +48,7 @@ int prinnocta(va_list arguments, char *buf, unsigned int ibuf);
 int prinnhexa(va_list arguments, char *buf, unsigned int ibuf);
 int prinnuphx(va_list arguments, char *buf, unsigned int ibuf);
 int prinspint(va_list arguments, char *buf, unsigned int ibuf);
-int (*print_func_getter(const char *c, int index))(va_list, char *, unsigned int);
+int (*print_func_getter(const char *c, int ind))(va_list, char *, unsigned int);
 int print_funct_id(const char *s, int index);
 unsigned int buffer_handler(char *buffer, char s, unsigned int ibuffer);
 int buffer_printer(char *buffer, unsigned int nbuffer);
