@@ -2,10 +2,10 @@
 /**
  * print_func_getter - selects the correct function to perform the operation.
  * @c: argument id
- * @ind: index for argument id
+ * @in: index for argument id
  * Return: pointer to a function.
  */
-int (*print_func_getter(const char *c, int ind))(va_list, char *, unsigned int)
+int (*print_func_getter(const char *c, int in))(va_list, char *, unsigned int)
 {
 	print_t pr[] = {
 		{"c", print_char}, {"s", print_strn},
@@ -37,13 +37,13 @@ int (*print_func_getter(const char *c, int ind))(va_list, char *, unsigned int)
 	};
 	int i = 0, j = 0, first_index;
 
-	first_index = ind;
+	first_index = in;
 	while (pr[i].type_arg)
 	{
-		if (c[ind] == pr[i].type_arg[j])
+		if (c[in] == pr[i].type_arg[j])
 		{
 			if (pr[i].type_arg[j + 1] != '\0')
-				ind++, j++;
+				in++, j++;
 			else
 				break;
 		}
@@ -51,7 +51,7 @@ int (*print_func_getter(const char *c, int ind))(va_list, char *, unsigned int)
 		{
 			j = 0;
 			i++;
-			ind = first_index;
+			in = first_index;
 		}
 	}
 	return (pr[i].f);
