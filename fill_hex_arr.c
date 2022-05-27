@@ -3,8 +3,8 @@
 /**
  * fill_hex_arr - writes the character to standard output
  *
- * @bnr: array where the binary data is stored .
- * @hex: array where the hexadecimal data is stored 
+ * @bin: array where the binary data is stored .
+ * @hex: array where the hexadecimal data is stored
  * @isupper: integer that determines the hexadecimal array is
  * in upper or lower case.
  * @size: size of hex
