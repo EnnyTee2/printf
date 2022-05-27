@@ -1,10 +1,10 @@
 #include "main.h"
 
 /**
- * fill_long_oct_array - calculates a long octal number
+ * fill_long_oct_arr - calculates a long octal number
  *
  * @bin: array where the binary data is stored
- * @oct: array where the octal data is stored 
+ * @oct: array where the octal data is stored
  *
  * Return: binary array.
  */
