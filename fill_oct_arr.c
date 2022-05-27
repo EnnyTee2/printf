@@ -3,7 +3,7 @@
 /**
  * fill_oct_arr - writes the character to standard output
  *
- * @bin: array where is the binary data is stored. 
+ * @bin: array where is the binary data is stored.
  * @oct: array where the octal data is stored.
  *
  * Return: binary array.
