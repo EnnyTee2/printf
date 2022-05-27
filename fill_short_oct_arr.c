@@ -3,7 +3,7 @@
 /**
  * fill_short_oct_arr - generates a short octal number
  *
- * @bin: array where is the binary data is stored 
+ * @bin: array where is the binary data is stored
  * @oct: array where the the octal data is stored.
  *
  * Return: binary array.
